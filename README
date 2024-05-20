@@ -1,0 +1,24 @@
+**This is library database application based on SQLAlchemy and Flask** 
+- install required packages (pip install -r requirements.txt)
+- the user has 3 tables: one stores data about the books, another about the authors and the third about the current state of the book
+
+**In order to make changes to the model**
+1. making changes to models.py file
+2. flask db migrate
+3. flask db upgrade 
+
+**Withdrawal of changes**
+1.  flask db downgrade 
+
+**User manual**
+- start of the environment (flask shell)
+
+**Example of usage**
+
+**add**
+1. b = Book(title="Star Wars", description="a book about galactic warriors")
+2. db.session.add(b)
+3. db.session.commit()
+
+**query**
+1. books = Book.query.all()
